@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#umumi{
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+#umumi div {
+    position: absolute;
+}
+#background {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/backg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/logoilk.jpg');
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+    left: 50%;
+    top: -100px;
+    transform: translate(-50%, 0);
+    animation-name: logo;
+    animation-duration: 31s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+#shop1{
+    width: 300px;
+    height: 300px;
+    background-image: url("../img/coffeshop1.jpg");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+z-index: 2;
+right: -300px;
+bottom: 100px;
+transform: translate(0, 0);
+animation-name: shop1;
+animation-duration: 22s;
+animation-delay: 6s;
+animation-fill-mode:backwards ;
+}
+#shop2{
+    width: 300px;
+    height: 300px;
+    background-image: url("../img/coffeshop2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+    right: -300px;
+    bottom: 100px;
+    transform: translate(0,0);
+    animation-name:  shop2;
+    animation-duration: 17s;
+    animation-delay: 13s;
+    animation-fill-mode: backwards;
+}
+#coffegif{
+width: 150px;
+height: 150px;
+background-image: url(../img/coffe.gif);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+z-index: 2;
+left: -200px;
+bottom: 90px;
+transform: translate(0,0);
+animation-name: coffee;
+animation-duration:24s ;
+animation-delay: 3s;
+animation-fill-mode: backwards;
+}
+#son{
+    width: 700px;
+    height: 500px;
+    background-image: url(../img/logo2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 3;
+    top: -500px;
+    /* left: 50%; */
+    /* bottom: 100px; */
+    transform:translate(500px,0);
+    animation-name: son;
+    animation-duration: 5s;
+    animation-delay: 35s;
+    animation-fill-mode: forwards;
+}
+#sale{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(../img/sale.gif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 4;
+    top: 100px;
+    left: -300px;
+    transform: translate(0,0);
+    animation-name: sale;
+    animation-duration: 2s;
+    animation-delay: 37s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes logo {
+from{
+    top: -100px;
+    width: 100px;
+    height: 100px;
+}
+to{
+    top: 60px;
+    width: 200px;
+    height: 200px;
+
+}
+}
+@keyframes shop1{
+from{
+    right: -300px;
+}
+to{
+    right:  800px;
+}
+}
+@keyframes shop2{
+    from{
+        right: -300px;
+    }
+    to{
+right: 300px;
+    }
+}
+@keyframes coffee{
+from{
+    left: -200px;
+    bottom: 90px;
+}
+to{
+    left:850px;
+    bottom:70px
+}
+}
+@keyframes son{
+    from{
+        top: -500px;
+    }
+    to{
+        top: 80px;
+    }
+} 
+@keyframes sale{
+    from{ left: -300px;
+
+}
+to {
+    left: 400px;
+}
+   
+}
